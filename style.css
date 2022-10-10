@@ -79,10 +79,13 @@
     margin-left: 5px;
 }
 
-/* .cta-btn{
-    display: flex;
-    align-items: center;
-} */
+
+.cta-btn a{
+    text-decoration: none;
+    font-family: Gilroy;
+}
+
+
 .btn {
     padding: 12px 34px;
     outline: none;
