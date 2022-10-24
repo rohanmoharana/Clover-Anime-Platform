@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="signup.css">
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <title>Clover - Anime Streaming Platform</title>
+    <script src="https://kit.fontawesome.com/e85e81c128.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -20,13 +22,36 @@
                 <a href="./index.html"><img src="./assets/logo-blk.svg" alt=""></a>
                 <h2>Welcome !</h2>
                 <p class="head-text">Create Your Account</p>
-                <form action="#">
-                    <input type="text" name="" id="" placeholder="Username">
-                    <input type="email" name="" id="" placeholder="Your Email">
-                    <input type="text" name="" id="" placeholder="Phone Number">
-                    <input type="password" name="" id="" placeholder="Password">
-                    <input type="password" name="" id="" placeholder="Confirm Password">
-                    <button>Sign Up</button>
+                <form action="./index.html">
+                    <div class="form-grp">
+                        <input type="text" name="" id="username" placeholder="Username" onkeyup="userValidate()">
+                        <span class="usertext"></span>
+                    </div>
+
+                    <div class="form-grp">
+                        <input type="email" name="" id="email" placeholder="Your Email" onkeyup="emailValidate()">
+                        <span class="emailtext"></span>
+                    </div>
+
+                    <div class="form-grp">
+                        <input type="text" name="" id="phone" placeholder="Phone Number" onkeyup="phoneValidate()">
+                        <span class="phonetext"></span>
+                    </div>
+
+                    <div class="form-grp">
+                        <input type="password" name="" id="password" placeholder="Password"
+                            onkeyup="passwordValidate()">
+                        <span class="passtext"></span>
+                    </div>
+
+                    <div class="form-grp">
+                        <input type="password" name="" id="c-password" placeholder="Confirm Password"
+                            onkeyup="confirmValidate()">
+                        <span class="confirmtext"></span>
+                    </div>
+
+                    <!-- <button type="submit">Sign Up</button> -->
+                    <button type="submit" onclick=" return validate()">Sign up</button>
                 </form>
                 <p class="login-text">Already have an account? <span>Login</span></p>
             </div>

@@ -60,6 +60,20 @@
     font-family: Gilroy;
 }
 
+
+.form-grp{
+    position: relative;
+    margin: 13px 0;
+}
+
+.form-grp span{
+    position: absolute;
+    top: 15px;
+    font-size: 13px;
+    right: 20px;
+    color: #e61515;
+}
+
 .head-text{
     margin-top: 5px;
     margin-bottom: 26px;
@@ -72,7 +86,6 @@ form input{
     display: block;
     width: 100%;
     padding: 14px;
-    margin: 13px 0;
     border-radius: 16px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.349);
@@ -125,4 +138,8 @@ form button:hover{
 
 .login-text span:hover{
     color: #4AC544;
+}
+
+.fa-solid{
+    color:#75be1c;
 }
